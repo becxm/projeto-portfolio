@@ -15,6 +15,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Base styles */
 * {
     margin: 0;
@@ -45,11 +49,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-#nav_logo {
-    font-size: 30px;
+    justify-content: right;
 }
 
 .menu-btn-container {
@@ -159,6 +159,91 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0;
 }
+
+/* Serviços */
+.servicos-selection {
+    padding: 40px 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centralizar */
+    border-radius: 20px;
+}
+
+
+.servicos-selection h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.servicos-selection p {
+    font-size: 16px;
+    color: #afadad;
+    margin-bottom: 40px;
+}
+
+/* Container dos cards */
+.cards-container { 
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha ao topo (ou center, se quiser verticalmente no centro) */
+    gap: 30px; /* Espaçamento entre os cards */
+    margin: 0 auto; /* Centraliza na tela */
+    padding: 20px 0;
+    flex-wrap: nowrap; /* NÃO deixa quebrar em coluna */
+    max-width: 100%; /* Usa toda a largura disponível */
+    overflow-x: auto; /* Adiciona scroll horizontal se faltar espaço */
+}
+
+/* Card individual */
+.card-servico {
+    background-color: var(--cor02);
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 280px;
+    height: 350px; /* Altura fixa para alinhar todos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0; /* Impede de reduzir o tamanho ao faltar espaço */
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Ícone do serviço */
+.icon-servico {
+    font-size: 50px;
+    color: var(--cor005); /* Cor ícone */
+}
+
+/* Título do serviço */
+.card-servico h3 {
+    font-size: 22px;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+/* Link 'Veja Mais' */
+.card-servico a {
+    text-decoration: none;
+    color: var(--cor005);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card-servico a:hover {
+    color: white;
+}
+
 
 /* Responsiveness */
 @media (max-width: 768px) {
