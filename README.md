@@ -1,2 +1,2 @@
 # projeto-portfolio
- Portfólio desevolvimento para faculdade
+ Portfólio desenvolvido para faculdade
