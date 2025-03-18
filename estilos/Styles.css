@@ -102,13 +102,10 @@ header {
     display: none;
 }
 
-.mobile_btn {
+#mobile_menu {
     display: none;
 }
 
-#mobile_nav_list {
-    display: none;
-}
 
 @media screen and (max-width: 1170px) {
     #nav_list,
