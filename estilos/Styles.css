@@ -102,7 +102,11 @@ header {
     display: none;
 }
 
-#mobile_menu {
+.mobile_btn {
+    display: none;
+}
+
+#mobile_nav_list {
     display: none;
 }
 
