@@ -104,8 +104,20 @@ header {
 
 #mobile_menu {
     display: none;
+    position: absolute;
+    top: 70px; /* Ajuste a posição do menu */
+    left: 0;
+    width: 100%;
+    background-color: var(--cor01); /* Cor de fundo */
+    padding: 20px 0;
+    text-align: center;
 }
 
+#mobile_menu .btn-default {
+    display: block;
+    width: 20%; /* Faz o botão ocupar mais espaço */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
 
 @media screen and (max-width: 1170px) {
     #nav_list,
