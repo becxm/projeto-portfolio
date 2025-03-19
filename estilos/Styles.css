@@ -214,6 +214,11 @@ header {
 }
 
 /* Serviços */
+#servicos {
+    background-color: #f8efdc;
+}
+
+
 .servicos-selection {
     padding: 40px 20px;
     background-color: white;
