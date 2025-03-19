@@ -55,6 +55,36 @@
     color: #734E40;
     text-decoration: none;
     padding-block: 16px;
+    transition: .5s;
+}
+
+.nav-list a:hover {
+    font-size: 24px;
+    transition: .5s;
+    color: #8C4126;
+}
+
+.menu-bar {
+    border: none;
+    background: none;
+    border-top: 3px solid #734E40;
+    cursor: pointer;
+}
+
+.menu-bar::before,
+.menu-bar::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #734E40;
+    margin-top: 5px;
+}
+
+@media (max-width: 901px) {
+    .menu-bar {
+        display: none;
+    }
 }
 
 .hamburger {
