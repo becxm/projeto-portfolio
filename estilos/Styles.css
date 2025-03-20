@@ -300,6 +300,58 @@ header {
     color: white;
 }
 
+.footer {
+    background-color: #6a4638; /* Cor de fundo */
+    color: #e5d4c3; /* Cor do texto */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Empurra os itens para as extremidades */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-left {
+    width: 50%; /* Define um tamanho para a seção "Sobre o Portfólio" */
+}
+
+.footer-right {
+    width: 30%; /* Define um tamanho para a seção "Links" */
+    text-align: left; /* Alinha o conteúdo à direita */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 8px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #e5d4c3; /* Cor dos links */
+    transition: 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: #ffffff; /* Cor ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e5d4c3;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
 
 /* Responsiveness */
 @media screen and (max-width: 1170px) {
