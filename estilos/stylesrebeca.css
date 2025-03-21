@@ -35,7 +35,7 @@ html {
 
 .nav {
     align-items: center;
-    max-width: 1500px;
+    max-width: 3000px;
     min-width: 300px;
     height: 200px;
     margin-inline: auto;
@@ -107,7 +107,7 @@ html {
         width: 100vw;
         height: 50vh;
         background: #BF8563;
-        clip-path: circle(100px at 90% -40%);
+        clip-path: circle(100px at 90% -100%);
         transition: 1s ease-out;
 
         flex-direction: column;
