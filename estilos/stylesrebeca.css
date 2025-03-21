@@ -23,7 +23,7 @@
 .header {
     background-color: #f8efdcc2;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
-    padding-inline: 10px;
+    padding-inline: 16px;
 }
 
 .nav {
@@ -266,6 +266,7 @@ ul.menu-list {
     width: 500px;
     justify-content: center;
     display: flex;
+    align-items: center;
 }
 
 .menu-list {
@@ -300,19 +301,75 @@ ul.menu-list {
 
 li.menu {
     width: 100px;
+    align-items: center;
 }
 
 .insta {
     width:130px;
     padding: 0px;
+    align-items: center;
 }
 
 .img{
     width: 65px;
-    padding: 30px;
+    padding: 27px;
 }
 
 .linkedin {
     width: 77px;
     padding-left: 10px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;font-family: var(--font01);
+}
+
+.contato {
+    max-width: 1400px;
+    min-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: left;
+    padding: 50px;
+    font-size: 4em;
+    color: black;
+    text-shadow:1px 1px 3px rgba(0, 0, 0, 0.541);
+}
+
+.contato > p {
+    padding: 50px;
+    padding-top: 10px;
+}
+
+#instagram {
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+}
+
+#instagram img {
+    background-color: #f8efdc91;
+    border-radius: 50px;
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.404);
+    box-shadow: inset 3px 10px -3px rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+}
+
+.contend h2 {
+    
+    text-align: center;
+    padding: 50px 0px 20px 20px ;
+}
+
+.contend > p {
+    padding: 8px;
+    padding-left: 20px;
+    font-size: clamp(0.5em, 1em + 1vw, 1em);
 }
