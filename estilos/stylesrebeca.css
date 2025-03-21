@@ -104,7 +104,7 @@
         max-width: 3000px;
         height: 50vh;
         background: #BF8563;
-        clip-path: circle(100px at 90% -25%);
+        clip-path: circle(100px at 90% -40%);
         transition: 1s ease-out;
 
         flex-direction: column;
@@ -180,9 +180,9 @@
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1500px at 90% -25%);
+        clip-path: circle(1500px at 100% -35%);
         pointer-events: all;
-        width: 100vw;
+        width: 155vw;
         max-width: 3000px;
     }
 }
