@@ -237,7 +237,7 @@
     .nav.active .menu-list {
         clip-path: circle(3000px at 90% 10%);
         pointer-events: all;
-        width: 100vw;
+        width: 100%;
         background: #BF8563;
         transition: 1s ease-in-out;
         gap: 32px;
