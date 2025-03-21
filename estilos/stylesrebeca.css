@@ -18,18 +18,20 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-align: justify;
 }
 
 .header {
-    background-color: #f8efdcc2;
+    background-color: #f8efdcdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
-    padding-inline: 16px;
+    max-width: 3500px;
+    min-width: 500px;
 }
 
 .nav {
     align-items: center;
-    max-width: 1280px;
-    min-width: 200px;
+    max-width: 1500px;
+    min-width: 300px;
     height: 200px;
     margin-inline: auto;
     display: flex;
@@ -321,14 +323,19 @@ li.menu {
 }
 
 main {
-    width: 100vw;
-    height: 100vh;font-family: var(--font01);
+    height: 100vh;
+    font-family: var(--font01);
+    background-color: rgb(255, 255, 255);
 }
 
 .contato {
-    max-width: 1400px;
-    min-width: 400px;
+    max-width: 1000px;
+    min-width: 500px;
     margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.404);
+    height: 100%;
 }
 
 h1 {
@@ -351,14 +358,14 @@ h1 {
 }
 
 #instagram img {
-    background-color: #f8efdc91;
-    border-radius: 50px;
-    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.404);
-    box-shadow: inset 3px 10px -3px rgba(0, 0, 0, 0.404);
+    border-radius: 28%;
+    box-shadow: 0px 3px 10px -3px rgb(0, 0, 0);
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    min-width: 30px;
+    max-width: 250px;
     height: 40%;
 }
 
@@ -368,7 +375,7 @@ h1 {
     padding: 50px 0px 20px 20px ;
 }
 
-.contend > p {
+.contend > li {
     padding: 8px;
     padding-left: 20px;
     font-size: clamp(0.5em, 1em + 1vw, 1em);
