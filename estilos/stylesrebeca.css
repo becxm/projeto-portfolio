@@ -403,5 +403,6 @@ h1 {
 
 .git-lista > li {
     padding-top: 10px;
-    padding-right: 55px;
+    padding-right: 29px;
+    align-items: center;
 }
