@@ -325,16 +325,16 @@ li.menu {
 }
 
 main {
-    height: 100vh;
+    height: 3000px;
     font-family: var(--font01);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .contato {
-    max-width: 1000px;
+    max-width: 800px;
     min-width: 500px;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin: auto;
     box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.404);
     height: 100%;
@@ -353,32 +353,55 @@ h1 {
     padding-top: 10px;
 }
 
-#instagram {
+#instagram, #github {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding: 50px;
 }
 
-#instagram img {
-    border-radius: 28%;
-    box-shadow: 0px 3px 10px -3px rgb(0, 0, 0);
-    
+#instagram img, #github img{
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 30px;
+    min-width: 40px;
     max-width: 250px;
     height: 40%;
+    padding-top: 10px;
 }
 
-.contend h2 {
-    
-    text-align: center;
-    padding: 50px 0px 20px 20px ;
+#github {
+    padding-top: 80px;
 }
 
-.contend > li {
-    padding: 8px;
-    padding-left: 20px;
+#github img {
+    padding-right: 50px;
+}
+
+.contend ul {
+    display: block;
+}
+
+.link > a {
+    text-decoration: overline;
+    color: #734E40;
+}
+
+.link > a:hover {
+    color: #8C4126;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lista > li {
     font-size: clamp(0.5em, 1em + 1vw, 1em);
+    padding: 3px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.git-lista > li {
+    padding-top: 10px;
+    padding-right: 55px;
 }
