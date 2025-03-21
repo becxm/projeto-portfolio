@@ -50,6 +50,7 @@
     display: flex;
     gap: 32px;
     margin: auto;
+    max-width: 3000px;
 }
 
 .nav-list a {
@@ -100,6 +101,7 @@
         top: 0;
         left: 0;
         width: 100vw;
+        max-width: 3000px;
         height: 50vh;
         background: #BF8563;
         clip-path: circle(100px at 90% -25%);
@@ -181,6 +183,7 @@
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
         width: 100vw;
+        max-width: 3000px;
     }
 }
 
