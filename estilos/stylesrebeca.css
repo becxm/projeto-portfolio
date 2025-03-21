@@ -352,30 +352,36 @@ h1 {
     padding-top: 10px;
 }
 
-#instagram, #github {
+#instagram {
     display: flex;
     justify-content: center;
     padding: 50px;
-    scroll-behavior: smooth;
 }
 
-#instagram img, #github img{
+#instagram img {
     padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40px;
-    max-width: 250px;
     height: 40%;
     padding-top: 10px;
+    max-width: 250px;
 }
 
 #github {
-    padding-top: 80px;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
 }
 
 #github img {
-    padding-right: 60px;
+    max-width: 250px;
+    padding-top: 10px;
+    padding-right: 10px;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contend ul {
@@ -402,8 +408,9 @@ h1 {
 }
 
 .git-lista > li {
+    font-size: clamp(0.5em, 1em + 1vw, 1em);
+    padding: 3px;
+    padding-left: 23px;
     padding-top: 10px;
-    padding-right: 39px;
-    align-items: center;
-    padding-bottom: 3px;
+    width: 183.97px;
 }
