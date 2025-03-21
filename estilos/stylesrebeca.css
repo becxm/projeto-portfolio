@@ -21,6 +21,10 @@
     text-align: justify;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .header {
     background-color: #f8efdcdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
@@ -97,11 +101,10 @@
     }
 
     .nav-list {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
-        max-width: 3000px;
         height: 50vh;
         background: #BF8563;
         clip-path: circle(100px at 90% -40%);
@@ -237,7 +240,7 @@
     .nav.active .menu-list {
         clip-path: circle(3000px at 90% -30%);
         pointer-events: all;
-        width: 100%;
+        width: 100vw;
         background: #BF8563;
         transition: 1s ease-in-out;
         gap: 32px;
@@ -277,8 +280,8 @@ ul.menu-list {
 }
 
 .menu-list {
-    
-    
+    display: flex;
+    margin: auto;
     align-items: center;
     margin-inline: auto;
     justify-content: center;
@@ -288,13 +291,6 @@ ul.menu-list {
 .menu-list li {
     letter-spacing: 1px;
     text-decoration: none;
-}
-
-
-.menu-list {
-    display: flex;
-
-    margin: auto;
 }
 
 .menu-list img {
@@ -360,6 +356,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding: 50px;
+    scroll-behavior: smooth;
 }
 
 #instagram img, #github img{
@@ -378,7 +375,7 @@ h1 {
 }
 
 #github img {
-    padding-right: 50px;
+    padding-right: 60px;
 }
 
 .contend ul {
@@ -406,7 +403,7 @@ h1 {
 
 .git-lista > li {
     padding-top: 10px;
-    padding-right: 29px;
+    padding-right: 39px;
     align-items: center;
     padding-bottom: 3px;
 }
