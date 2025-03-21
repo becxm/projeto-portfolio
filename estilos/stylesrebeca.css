@@ -182,7 +182,7 @@
     .nav.active .nav-list {
         clip-path: circle(1500px at 100% -35%);
         pointer-events: all;
-        width: 155vw;
+        width: 134vw;
         max-width: 3000px;
     }
 }
