@@ -25,7 +25,8 @@
     background-color: #f8efdcdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
     max-width: 3500px;
-    min-width: 500px;
+    min-width: 490px;
+    padding-left: 10px;
 }
 
 .nav {
