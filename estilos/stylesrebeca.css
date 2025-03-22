@@ -186,6 +186,7 @@ html {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
         width: 100vw;
+        min-width: 500px;
         max-width: 3000px;
     }
 }
