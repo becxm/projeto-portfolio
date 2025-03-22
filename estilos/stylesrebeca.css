@@ -354,13 +354,20 @@ h1 {
     padding-top: 10px;
 }
 
-#instagram {
+#instagram,
+#whatsapp,
+#github,
+#linkedin {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
-#instagram img {
+
+#instagram img,
+#whatsapp img,
+#github img,
+#linkedin img {
     padding-right: 10px;
     display: flex;
     justify-content: center;
@@ -371,23 +378,7 @@ h1 {
 }
 
 #github {
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-}
-
-#github img {
-    max-width: 250px;
-    padding-top: 10px;
-    padding-right: 10px;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contend ul {
-    display: block;
+    padding-right: 100px;
 }
 
 .link > a {
@@ -407,12 +398,4 @@ h1 {
     padding: 3px;
     padding-left: 50px;
     padding-top: 10px;
-}
-
-.git-lista > li {
-    font-size: clamp(0.5em, 1em + 1vw, 1em);
-    padding: 3px;
-    padding-left: 23px;
-    padding-top: 10px;
-    width: 183.97px;
 }
