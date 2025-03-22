@@ -105,6 +105,7 @@ html {
         top: 0;
         left: 0;
         width: 100vw;
+        min-width: 500px;
         height: 50vh;
         background: #BF8563;
         clip-path: circle(10px at 100vw -15%);
