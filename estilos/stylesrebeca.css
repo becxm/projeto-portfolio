@@ -326,7 +326,7 @@ li.menu {
 }
 
 main {
-    height: 3000px;
+    height: 100vw;
     font-family: var(--font01);
     background-color: white;
 }
@@ -357,7 +357,7 @@ h1 {
 #instagram,
 #whatsapp,
 #github,
-#linkedin {
+#linkedIn {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
@@ -367,7 +367,7 @@ h1 {
 #instagram img,
 #whatsapp img,
 #github img,
-#linkedin img {
+#linkedIn img {
     padding-right: 10px;
     display: flex;
     justify-content: center;
@@ -381,7 +381,7 @@ h1 {
     padding-right: 100px;
 }
 
-#linkedin {
+#linkedIn {
     padding-right: 75px;
 }
 
