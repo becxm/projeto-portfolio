@@ -381,6 +381,10 @@ h1 {
     padding-right: 100px;
 }
 
+#linkedin {
+    padding-right: 75px;
+}
+
 .link > a {
     text-decoration: overline;
     color: #734E40;
