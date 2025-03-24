@@ -30,7 +30,7 @@
     <main>
         <section class="contato">
             <h1>Nos contate.</h1>
-            <p>Entre em contato conosco pelas nossas redes sociais ou nos mande um e-mail.</p>
+            <p>Entre em contato conosco pelas nossas redes sociais ou nos mande um <a class="email" href="#email">e-mail</a>.</p>
             <div id="instagram">
                 <img src="imagens/instagram-logo-preta.png" alt="">
                 <ul type="none" class="lista">
@@ -76,12 +76,38 @@
                 </ul>
             </div>
         </section>
-        <aside class="email">
-
+        <aside id="email">
+            <h1 class="email">Mande um e-mail.</h1>
+            <p>Nos mande um e-mail diretamente por portfolio@gmail.com ou deixe sua mensagem abaixo.</p>
+            <form class="email" method="get">
+                <label for="inome">
+                    <input class="nome" type="text" name="nome" id="inome"
+                    required
+                    autocomplete="name" placeholder="Nome">
+                </label>
+                
+                <label for="iemail">
+                    <input class="iemail" type="email" name="email" id="iemail"
+                    required
+                    autocomplete="email" placeholder="Seu e-mail"> 
+                </label> <br>
+                
+                <label for="imensagem">
+                    <textarea name="mensagem" id="imensagem" 
+                    required
+                    placeholder="Sua mensagem"
+                    cols="60"
+                    rows="15">
+                    </textarea>
+                </label> <br>
+                
+                <input class="botao" type="submit" value="Enviar">
+                <input class="botao" type="reset" value="Limpar">
+            </form>
         </aside>
     </main>
     <footer>
-
+        <p>Portfólio desenvolvido por alunos da Universidade Veiga de Alemeida.</p>
     </footer>
 </body>
 </html>
