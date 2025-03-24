@@ -449,9 +449,9 @@ form.email {
 .iemail {
     width: 240px;
     height: 40px;
-    margin: 15px;
+    margin: 10px;
     padding-left: 5px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 a.e-mail {
@@ -465,6 +465,11 @@ a.e-mail:hover {
     text-decoration: underline;
 }
 
+textarea {
+    margin: 10px 0 25px 0;
+    padding: 10px;
+    font-size: 16px;
+}
 
 .botao {
     padding: 10px 20px 10px 20px;
