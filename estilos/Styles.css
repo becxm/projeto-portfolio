@@ -13,10 +13,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-html {
-    scroll-behavior: smooth;
-  }
-
 /* Base styles */
 * {
     margin: 0;
@@ -25,20 +21,30 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+
 body {
-    background-color: #f8efdc;
+    background-color: var(--cor01);
 }
 
 main {
     background-color: white;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* Header and Navigation */
 header {
     width: 100%;
     padding: 28px 8%;
-    background-color: #f8efdc;
+    background-color: var(--cor01);
     position: sticky;
     top: 0;
 }
@@ -117,38 +123,6 @@ header {
     margin: 20px auto; /* Centraliza horizontalmente */
 }
 
-@media screen and (max-width: 1170px) {
-    #nav_list,
-    #navbar .btn-default {
-        display: none;
-    }
-
-    #mobile_btn {
-        display: block;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
-    }
-
-    #mobile_nav_list .nav-item {
-        list-style: none;
-        text-align: center;
-    } 
-}
 /* Hero Section */
 .hero-section {
     max-width: 1200px;
@@ -192,12 +166,12 @@ header {
 
 /* Texto estilizado */
 .sobre-texto {
-    text-align: right;
+    text-align: left;
     max-width: 400px;
     padding: 0;
 }
 .sobre-texto2 {
-    text-align: left;
+    text-align: right;
     max-width: 400px;
     padding: 0;
 }
@@ -300,8 +274,99 @@ header {
     color: white;
 }
 
+/* Rodapé */
+
+.footer {
+    bottom: 0%;
+    width: 100%;
+    background-color: var(--cor01); /* Cor de fundo */
+    color: var(--cor005); /* Cor do texto */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Empurra os itens para as extremidades */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-left {
+    width: 50%; /* Define um tamanho para a seção "Sobre o Portfólio" */
+}
+
+.footer-right {
+    width: 30%; /* Define um tamanho para a seção "Links" */
+    text-align: left; /* Alinha o conteúdo à direita */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 8px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: var(--cor005); /* Cor dos links */
+    transition: 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: var(--cor006);; /* Cor ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e5d4c3;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
 
 /* Responsiveness */
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+}
+
 @media screen and (max-width: 1170px) {
     #nav_list,
     #navbar .btn-default {
