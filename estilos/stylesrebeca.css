@@ -438,6 +438,7 @@ aside#email > p {
     text-align: center;
     font-size: 16.5px;
     margin-top: -25px;
+    font-family: var(--font01);
 }
 
 form.email {
@@ -453,10 +454,17 @@ form.email {
     margin-top: 10px;
 }
 
-.mensagem {
-    word-break: break-all;
-    
+a.e-mail {
+    color:#8C4126;
+    text-decoration: none;
 }
+
+a.e-mail:hover {
+    color: #F2D1B3;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 .botao {
     padding: 10px 20px 10px 20px;
