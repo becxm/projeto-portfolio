@@ -11,32 +11,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilos/Styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav id="navbar" aria-label="Menu de Navegação">
-            <div class="menu-btn-container">
-                <ul id="nav_list">
-                    <li class="nav-item"><a href="#">Início</a></li>
-                    <li class="nav-item"><a href="#">Novidades</a></li>
-                    <li class="nav-item"><a href="#">Projetos</a></li>
-                    <li class="nav-item"><a href="#">Sobre</a></li>
-                    <li class="nav-item"><a href="#">Contato</a></li>
-                </ul>
-                <button id="mobile_btn">
-                   <i class="fa-solid fa-bars"></i> 
-                </button>
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger"></button>
+            <ul type="none" class="nav-list">
+                <li><a class="inicio" href="index.html">Início</a></li>
+                <li><a class="novidades" href="#">Novidades</a></li>
+                <li><a class="projetos" href="projetos.html">Projetos</a></li>
+                <li><a class="sobre" href="#">Sobre</a></li>
+                <li><a class="contatos" href="contatos.html">Contato</a></li>
+            </ul>
         </nav>
-    <div id="mobile_menu">
-        <ul id="mobile_nav_list">
-            <li class="nav-item"><a href="#">Início</a></li>
-            <li class="nav-item"><a href="#">Novidades</a></li>
-            <li class="nav-item"><a href="#">Projetos</a></li>
-            <li class="nav-item"><a href="#">Sobre</a></li>
-            <li class="nav-item"><a href="#">Contato</a></li>
-        </ul>
-    </div>
     </header>
 </div>
    <nav>
@@ -56,7 +44,6 @@
         <p>
             Tenho 19 anos, apaixonado por tecnologia, cursando Ciência da Computação. Aprendendo programação, inteligência artificial e desenvolvimento de software. Sempre em busca de novos desafios, sonha em inovar no mundo da tecnologia.
         </p>
-        <button class="btn-default"> <a href="#"></a>Mais Sobre</button>
     </div>
 
     <!-- Imagem 1 - Thiago -->
@@ -68,7 +55,7 @@
 
     <!-- Imagem 2 - Rebeca -->
     <div class="container-imagem">
-        <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2017/01/formacao_sera-que-sou-uma-pessoa-que-tem-virtudes.jpg" 
+        <img src="imagens/Rebeca.jpg" 
         alt="Foto da Rebeca" 
         class="foto-arredondada">
     </div>
@@ -77,7 +64,7 @@
     <div class="sobre-texto2">
         <h2>Olá, Eu sou a Rebeca</h2>
         <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            Tenho 19 anos e curso Ciência da Computação na Veiga de Almeida. Desde nova sempre estive no meio tecnológico, mas descobri que queria seguir essa área profissionalmente há poucos anos. Tenho o objetivo de trazer singularidade nos meus projetos e fazer com que as pessoas os enxerguem com uma visão única e original.
         </p>
     </div>
   <!-- Texto 3 - Romanelli -->
@@ -95,7 +82,7 @@
 </div>
 <!-- Imagem 4 - Matheus -->
 <div class="container-imagem">
-    <img src="https://yt3.googleusercontent.com/zu_5mPU4myzRlphPN0FQPMnoFAIGozFeQXxE6I4woSUhEQO_XfQpfadXGvXZ9B8jbwyB2Puk=s900-c-k-c0x00ffffff-no-rj" 
+    <img src="imagens/Matheus.jpg" 
     alt="Foto do Matheus" 
     class="foto-arredondada">
 </div>
@@ -103,7 +90,7 @@
 <div class="sobre-texto2">
     <h2>Olá, Eu sou o Matheus</h2>
     <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        Tenho 25 anos e, desde que me conheço por gente, sempre gostei de mexer com computadores, devido à grande influência da minha família. Sempre adorei vê-los mexendo nos computadores e consertando os problemas que eles tinham. Hoje, faço Ciência da Computação porque amo essa área de criação e resolução de problemas tecnológicos.
     </p>
 </div>
 <!-- Texto 5 - Gabriel -->
@@ -115,11 +102,68 @@
 </div>
 <!-- Imagem 5 - Gabriel -->
 <div class="container-imagem">
-    <img src="https://play-lh.googleusercontent.com/p7rx-TDw8mSXmnN5oreMbOrC6FTumoRsnz8rDxUHL6-7xYtLlzcyj1GS8UKyBx5eJg" 
+    <img src="imagens/Gabriel.jpg" 
     alt="Foto do Gabriel" 
     class="foto-arredondada">
 </div>
 </section>
+ <!-- Menu Mobile -->
+
+ <section class="sobre-container-grid-mobile">
+    <!-- Thiago Mobile -->
+    <div class="container-imagem">
+        <img src="imagens/Thiago.jpg" height="100%" width="100%" 
+        alt="Foto do Thiago" 
+        class="foto-arredondada">
+        <h2>Olá, Eu sou o Thiago</h2>
+        <p>
+            Tenho 19 anos, apaixonado por tecnologia, cursando Ciência da Computação. Aprendendo programação, inteligência artificial e desenvolvimento de software. Sempre em busca de novos desafios, sonha em inovar no mundo da tecnologia.
+        </p>
+    </div>
+
+    <!-- Rebeca Mobile -->
+    <div class="container-imagem">
+        <img src="imagens/Rebeca.jpg" 
+        alt="Foto da Rebeca" 
+        class="foto-arredondada">
+        <h2>Olá, Eu sou a Rebeca</h2>
+        <p>
+            Tenho 19 anos e curso Ciência da Computação na Veiga de Almeida. Desde nova sempre estive no meio tecnológico, mas descobri que queria seguir essa área profissionalmente há poucos anos. Tenho o objetivo de trazer singularidade nos meus projetos e fazer com que as pessoas os enxerguem com uma visão única e original.
+        </p>
+    </div>
+<!-- Romanelli Mobile -->
+<div class="container-imagem">
+    <img src="https://st.depositphotos.com/3489481/5126/i/450/depositphotos_51264135-stock-photo-happy-man-talking-on-smart.jpg" 
+    alt="Foto do Romanelli" 
+    class="foto-arredondada">
+    <h2>Olá, Eu sou o Romanelli</h2>
+    <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    </p>
+</div>
+<!-- Matheus Mobile -->
+<div class="container-imagem">
+    <img src="imagens/Matheus.jpg" 
+    alt="Foto do Matheus" 
+    class="foto-arredondada">
+    <h2>Olá, Eu sou o Matheus</h2>
+    <p>
+        Tenho 25 anos e, desde que me conheço por gente, sempre gostei de mexer com computadores, devido à grande influência da minha família. Sempre adorei vê-los mexendo nos computadores e consertando os problemas que eles tinham. Hoje, faço Ciência da Computação porque amo essa área de criação e resolução de problemas tecnológicos.
+    </p>
+</div>
+<!-- Gabriel Mobile -->
+<div class="container-imagem">
+    <img src="imagens/Gabriel.jpg" 
+    alt="Foto do Gabriel" 
+    class="foto-arredondada">
+    <h2>Olá, Eu sou a Gabriel</h2>
+    <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    </p>
+</div>
+</section>
+
+
 <!-- Seção Serviços -->
 <section id="servicos" class="servicos-selection">
     <h2>Serviços</h2>
