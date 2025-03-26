@@ -13,12 +13,12 @@
     --cor006: #734E40;
     --font01: Poppins;
     --font02: Quicksand;
+    
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    text-align: justify;
 }
 
 html {
@@ -26,7 +26,7 @@ html {
   }
 
 .header {
-    background-color: #f8efdcdc;
+    background-color: #f8efdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
     max-width: 3500px;
     min-width: 490px;
@@ -476,14 +476,78 @@ textarea {
 }
 
 footer {
-    min-width: 500px;
-    background-color: #F9F1E0;
-    display: block;
-    height: 100%;
+    bottom: 0%;
+    width: 100%;
+    background-color: var(--cor01); /* Cor de fundo */
+    color: var(--cor005); /* Cor do texto */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font01);
 }
 
-footer > p {
-    text-align: center;
-    font-family: var(--font01);
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+.footer-left {
+    width: 50%; 
+}
+
+.footer-left > p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+}
+
+.footer-right {
+    width: 30%; 
+    text-align: left; 
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 8px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: var(--cor005); 
+    transition: 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: var(--cor006);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e5d4c3;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-left > h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
