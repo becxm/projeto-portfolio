@@ -513,12 +513,18 @@ footer {
 
 .footer-right {
     width: 30%; 
-    text-align: left; 
+    
 }
 
 .footer-right ul {
     list-style: none;
     padding: 0;
+    display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
 }
 
 .footer-right ul li {
