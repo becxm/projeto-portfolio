@@ -1,7 +1,5 @@
-$(document).ready(function() {
-     $("#mobile_btn").click(function() {
-         $("#mobile_menu").toggleClass("active");
-         $("#mobile_btn").find('i').toggleClass("fa-x");
-     });
- });
- 
+const hamburger =  document.querySelector(".hamburger");
+
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
