@@ -477,9 +477,10 @@ textarea {
 
 footer {
     bottom: 0%;
-    width: 100%;
-    background-color: var(--cor01); /* Cor de fundo */
-    color: var(--cor005); /* Cor do texto */
+    max-width: 100%;
+    min-width: 500px;
+    background-color: var(--cor01);
+    color: var(--cor005);
     padding: 20px 0;
     font-family: Arial, sans-serif;
     text-align: center;
