@@ -13,7 +13,6 @@
     --cor006: #734E40;
     --font01: Poppins;
     --font02: Quicksand;
-    
 }
 
 * {
@@ -26,7 +25,7 @@ html {
   }
 
 .header {
-    background-color: #f8efdc;
+    background-color: #f8efdcdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
     max-width: 3500px;
     min-width: 490px;
@@ -479,8 +478,8 @@ footer {
     bottom: 0%;
     max-width: 100%;
     min-width: 500px;
-    background-color: var(--cor01);
-    color: var(--cor005);
+    background-color: var(--cor01); /* Cor de fundo */
+    color: var(--cor005); /* Cor do texto */
     padding: 20px 0;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -492,8 +491,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 100%;
-    min-width: 500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -503,32 +501,34 @@ footer {
 }
 
 .footer-left > p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        unicode-bidi: isolate;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
 }
 
 .footer-right {
     width: 30%; 
-    
 }
 
 .footer-right ul {
     list-style: none;
     padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    justify-items: center;
     display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        unicode-bidi: isolate;
 }
 
 .footer-right ul li {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .footer-right ul li a {
@@ -547,6 +547,8 @@ footer {
     border-top: 1px solid #e5d4c3;
     padding-top: 10px;
     font-size: 14px;
+    justify-items: center;
+    display: block;
 }
 
 .footer-left > h3 {
@@ -558,4 +560,6 @@ footer {
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+    text-align: center;
+    ;
 }
