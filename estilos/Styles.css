@@ -529,6 +529,12 @@ li.menu {
 }
 /* Contatos */
 /* Parte dos projetos */
+
+.corpoprojeto{
+background-color: #f7f7f7;
+}
+
+
 .container-integrantes {
     display: flex;
     flex-wrap: wrap;
@@ -549,7 +555,7 @@ li.menu {
     padding: 15px;
     border-radius: 10px;
     background-color: #f8f8f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Informações do integrante */
