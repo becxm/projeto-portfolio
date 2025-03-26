@@ -567,8 +567,8 @@ background-color: #f7f7f7;
 /* Fotos circulares (já definido no seu CSS) */
 .foto-circular {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
