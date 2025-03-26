@@ -169,25 +169,63 @@
     <h2>Serviços</h2>
     <p>O que nós oferecemos</p>
     <div class="cards-container">
-        <div class="card-servico">
+        <div class="card-servico" onclick="openModal('designerModal')">
             <i class="fa-solid fa-table-cells-large icon-servico"></i>
             <h3>Designer</h3>
-            <a href="#">Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
+            <a>Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <div class="card-servico">
+        <div class="card-servico" onclick="openModal('frontendModal')">
             <i class="fa-solid fa-code icon-servico"></i>
             <h3>Front-End</h3>
-            <a href="#">Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
+            <a>Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <div class="card-servico">
+        <div class="card-servico" onclick="openModal('backendModal')">
             <i class="fa-solid fa-database icon-servico"></i>
             <h3>Back-End</h3>
-            <a href="#">Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
+            <a>Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
         </div>
+    </div>
 </section>
+<!-- Modals -->
+<div id="designerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('designerModal')">&times;</span>
+        <h2>Ui/UX Designer</h2>
+        <ul>
+            <li>Desenvolvo o layout da sua aplicação mobile ou web.</li>
+            <li>Crio vídeos editados para apresentações de aplicações.</li>
+            <li>Desenvolvo interfaces UI/UX interativas.</li>
+            <li>Crio logótipos de marcas.</li>
+        </ul>
+    </div>
 </div>
+
+<div id="frontendModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('frontendModal')">&times;</span>
+        <h2>Front-End Developer</h2>
+        <ul>
+            <li>Criação de interfaces web responsivas.</li>
+            <li>Utilização de tecnologias como HTML, CSS e JavaScript.</li>
+            <li>Desenvolvimento com frameworks como React e Vue.js.</li>
+            <li>Otimização de desempenho.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="backendModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('backendModal')">&times;</span>
+        <h2>Back-End Developer</h2>
+        <ul>
+            <li>Desenvolvimento de APIs seguras e eficientes.</li>
+            <li>Banco de dados SQL e NoSQL.</li>
+            <li>Utilização de Node.js, Python, PHP e outras tecnologias.</li>
+            <li>Autenticação e segurança de sistemas.</li>
+        </ul>
+    </div>
 </main>
 <footer class="footer">
     <div class="footer-container">
