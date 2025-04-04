@@ -15,7 +15,7 @@
     
     /* Cada coluna de integrante */
     .coluna-integrante {
-        flex: 1;
+        flex: 1 1 300px;
         min-width: 250px;
         max-width: 300px;
         display: flex;
