@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilos/StylesIndex.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="estilos/StylesSobre.css">
     <script src="app.js" defer></script>
+    <title>Sobre</title>
 </head>
-
 <body>
     <header class="header">
         <nav class="nav">
@@ -29,31 +21,26 @@
         </nav>
     </header>
     </div>
-    <nav>
-        <section class="hero-section">
-            <h1 class="text-first">Estudantes de Ciência da Computação</h1>
-            <p class="text-secondary">
-                Somos estudantes da Universidade Veiga de Almeida, trabalhamos com front-end e principalmente com
-                back-end.
-            </p>
-            <a href="#sobre" class="text-third">Veja mais sobre ↓</a>
-    </nav>
-    </section>
     <main>
         <section id="sobre" class="sobre-container-grid">
             <!-- Texto 1 - Thiago -->
             <div class="sobre-texto">
+                <h3> Front-end developer</h3>
                 <h2>Olá, Eu sou o Thiago</h2>
                 <p>
-                    Tenho 19 anos, apaixonado por tecnologia, cursando Ciência da Computação. Aprendendo programação,
-                    inteligência artificial e desenvolvimento de software. Sempre em busca de novos desafios, sonha em
-                    inovar no mundo da tecnologia.
+                        Desde criança sempre tive grande interesse por tecnologia, e sentia vontade de aprender cada vez mais. Tive sorte das pessoas ao meu redor e amigos serem tão inseridos nisso quanto eu, o que criou um ambiente de cooperatividade e aprendizado conjunto. Quando entrei na faculdade, as infinitas possibilidades, principalmente na área de desenvolvimento de software, me animavam e alimentavam a minha constante fome por conhecimento, me fazendo buscar aprender sempre mais, mesmo que por conta própria.
+                    <br>
+                    <br>
+                    Tive a oportunidade de participar de um projeto para a loja Deia Presentes, contribuindo com a parte de design. 
+                    Essa experiência foi importante para aplicar na prática algumas das ideias que vinha estudando, além de me mostrar a importância da 
+                    colaboração em equipe e da atenção aos detalhes na criação de algo funcional e visualmente atrativo. Mesmo sendo um primeiro passo, 
+                    reforçou ainda mais meu interesse por tecnologia e design, e me motivou a continuar estudando e me desenvolvendo.
                 </p>
             </div>
 
             <!-- Imagem 1 - Thiago -->
             <div class="container-imagem">
-                <img src="imagens/Thiago.jpg" height="100%" width="100%" alt="Foto do Thiago" class="foto-arredondada">
+                <img src="imagens/ThiagoNovo.jpg" alt="Foto do Thiago" class="foto-arredondada">
             </div>
 
             <!-- Imagem 2 - Rebeca -->
@@ -116,12 +103,17 @@
         <section class="sobre-container-grid-mobile">
             <!-- Thiago Mobile -->
             <div class="container-imagem">
-                <img src="imagens/Thiago.jpg" height="100%" width="100%" alt="Foto do Thiago" class="foto-arredondada">
+                <img src="imagens/ThiagoNovo.jpg" height="100%" width="100%" alt="Foto do Thiago" class="foto-arredondada">
+                <h3> Front-end developer</h3>
                 <h2>Olá, Eu sou o Thiago</h2>
                 <p>
-                    Tenho 19 anos, apaixonado por tecnologia, cursando Ciência da Computação. Aprendendo programação,
-                    inteligência artificial e desenvolvimento de software. Sempre em busca de novos desafios, sonha em
-                    inovar no mundo da tecnologia.
+                    Desde criança sempre tive grande interesse por tecnologia, e sentia vontade de aprender cada vez mais. Tive sorte das pessoas ao meu redor e amigos serem tão inseridos nisso quanto eu, o que criou um ambiente de cooperatividade e aprendizado conjunto. Quando entrei na faculdade, as infinitas possibilidades, principalmente na área de desenvolvimento de software, me animavam e alimentavam a minha constante fome por conhecimento, me fazendo buscar aprender sempre mais, mesmo que por conta própria.
+                    <br>
+                    <br>
+                    Tive a oportunidade de participar de um projeto para a loja Deia Presentes, contribuindo com a parte de design. 
+                    Essa experiência foi importante para aplicar na prática algumas das ideias que vinha estudando, além de me mostrar a importância da 
+                    colaboração em equipe e da atenção aos detalhes na criação de algo funcional e visualmente atrativo. Mesmo sendo um primeiro passo, 
+                    reforçou ainda mais meu interesse por tecnologia e design, e me motivou a continuar estudando e me desenvolvendo.
                 </p>
             </div>
 
@@ -167,70 +159,6 @@
                 </p>
             </div>
         </section>
-
-
-        <!-- Seção Serviços -->
-        <section id="servicos" class="servicos-selection">
-            <h2>Serviços</h2>
-            <p>O que nós oferecemos</p>
-            <div class="cards-container">
-                <div class="card-servico" onclick="openModal('designerModal')">
-                    <i class="fa-solid fa-table-cells-large icon-servico"></i>
-                    <h3>Designer</h3>
-                    <a>Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="card-servico" onclick="openModal('frontendModal')">
-                    <i class="fa-solid fa-code icon-servico"></i>
-                    <h3>Front-End</h3>
-                    <a>Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="card-servico" onclick="openModal('backendModal')">
-                    <i class="fa-solid fa-database icon-servico"></i>
-                    <h3>Back-End</h3>
-                    <a>Veja Mais <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
-        <!-- Modals -->
-        <div id="designerModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('designerModal')">&times;</span>
-                <h2>Ui/UX Designer</h2>
-                <ul>
-                    <li>Desenvolvo o layout da sua aplicação mobile ou web.</li>
-                    <li>Crio vídeos editados para apresentações de aplicações.</li>
-                    <li>Desenvolvo interfaces UI/UX interativas.</li>
-                    <li>Crio logótipos de marcas.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="frontendModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('frontendModal')">&times;</span>
-                <h2>Front-End Developer</h2>
-                <ul>
-                    <li>Criação de interfaces web responsivas.</li>
-                    <li>Utilização de tecnologias como HTML, CSS e JavaScript.</li>
-                    <li>Desenvolvimento com frameworks como React e Vue.js.</li>
-                    <li>Otimização de desempenho.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="backendModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('backendModal')">&times;</span>
-                <h2>Back-End Developer</h2>
-                <ul>
-                    <li>Desenvolvimento de APIs seguras e eficientes.</li>
-                    <li>Banco de dados SQL e NoSQL.</li>
-                    <li>Utilização de Node.js, Python, PHP e outras tecnologias.</li>
-                    <li>Autenticação e segurança de sistemas.</li>
-                </ul>
-            </div>
     </main>
     <footer class="footer">
         <div class="footer-container">
@@ -255,5 +183,4 @@
         </div>
     </footer>
 </body>
-
 </html>
