@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <link rel="stylesheet" href="estilos/StylesIndex.css">
     <link rel="stylesheet" href="estilos/stylesmatheus.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="estilos/StylesIndex.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Javascript/javascript-projetos.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 
@@ -28,55 +31,80 @@
         <h1 class="text-first">Nossos Projetos</h1>
         <p class="text-secondary">Aqui vocês poderão ver os projetos que desenvolvemos em aula.</p>
     </section>
-    <!--Parte dos conteúdos-->
     <div class="container-integrantes">
-        <!-- Primeiro integrante -->
         <div class="coluna-integrante">
             <img src="imagens/Matheus.jpg" alt="Imagem do Matheus" class="foto-circular">
             <div class="info-integrante">
                 <p>Aqui estão os projetos que o integrante Matheus fez:</p>
-                <p><a href="" target="_blank">Projeto HTML</a></p>
-                <p><a href="" target="_blank">Projeto de outra matéria </a></p>
+                <div>
+                    <a href="" target="_blank">Projeto HTML</a>
+                    <button class="like-btn" data-projeto="matheus-html">❤️ <span class="like-count">0</span></button>
+                </div>
+                <div class="projetos-ocultos" style="display: none;">
+                    <p><a href="" target="_blank">1º projeto do Matheus </a></p>
+                    <p><a href="" target="_blank">2º projeto do Matheus</a></p>
+                </div>
                 <p>Link do nosso site: <a href="index.html">Portfólio</a></p>
+                <button class="mostrar-mais">Mostrar Mais</button>
             </div>
         </div>
 
-        <!-- Segundo integrante -->
         <div class="coluna-integrante">
             <img src="imagens/Thiago.jpg" alt="Imagem do Thiago" class="foto-circular">
             <div class="info-integrante">
                 <p>Aqui estão os projetos que o integrante Thiago fez:</p>
-                <p><a href="" target="_blank">Projeto HTML</a></p>
-                <p><a href="" target="_blank">Projeto de outra matéria</a></p>
+                <div>
+                    <a href="" target="_blank">Projeto HTML</a>
+                    <button class="like-btn" data-projeto="thiago-html">❤️ <span class="like-count">0</span></button>
+                </div>
+                <div class="projetos-ocultos" style="display: none;">
+                    <p><a href="" target="_blank">Projeto do Thiago</a></p>
+                    <p><a href="" target="_blank">Outro Projeto do Thiago</a></p>
+                </div>
                 <p>Link do nosso site: <a href="index.html">Portfólio</a></p>
+                <button class="mostrar-mais">Mostrar Mais</button>
             </div>
         </div>
 
-        <!-- Terceiro Integrante -->
         <div class="coluna-integrante">
             <img src="imagens/Rebeca.jpg" alt="Imagem da Rebeca" class="foto-circular">
             <div class="info-integrante">
-                <p>Aqui estão os projetos que a integrante Rebecafez:</p>
-                <p><a href="" target="_blank">Projeto HTML</a></p>
-                <p><a href="" target="_blank">Projeto de outra matéria</a></p>
+                <p>Aqui estão os projetos que a integrante Rebeca fez:</p>
+                <div>
+                    <a href="" target="_blank">Projeto HTML</a>
+                    <button class="like-btn" data-projeto="rebeca-html">❤️ <span class="like-count">0</span></button>
+                </div>
+                <div class="projetos-ocultos" style="display: none;">
+                    <p><a href="" target="_blank">Projeto da Rebeca</a></p>
+                    <p><a href="" target="_blank">Mais um Projeto da Rebeca</a></p>
+                </div>
                 <p>Link do nosso site: <a href="index.html">Portfólio</a></p>
+                <button class="mostrar-mais">Mostrar Mais</button>
             </div>
         </div>
 
-        <!-- Quarto participante -->
         <div class="coluna-integrante">
             <img src="imagens/Gabriel.jpg" alt="Imagem do Gabriel" class="foto-circular">
             <div class="info-integrante">
                 <p>Aqui estão os projetos que o integrante Gabriel fez:</p>
-                <p><a href="" target="_blank">Projeto HTML</a></p>
-                <p><a href="" target="_blank">Projeto de outra matéria</a></p>
+                <div>
+                    <a href="" target="_blank">Projeto HTML</a>
+                    <button class="like-btn" data-projeto="gabriel-html">❤️ <span class="like-count">0</span></button>
+                </div>
+                <div class="projetos-ocultos" style="display: none;">
+                    <p><a href="" target="_blank">Projeto Extra do Gabriel</a></p>
+                    <p><a href="" target="_blank">Outro projeto do Gabriel</a></p>
+                </div>
                 <p>Link do nosso site: <a href="index.html">Portfólio</a></p>
+                <button class="mostrar-mais">Mostrar Mais</button>
             </div>
         </div>
     </div>
+    <section class="texto-meio">
+        <p class="text-secondary">Caso tenha gostado dos projetos clique no coração!!! </p>
+    </section>
 </body>
 
-<!--Rodapé do site-->
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-left">
