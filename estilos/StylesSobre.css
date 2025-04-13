@@ -196,7 +196,7 @@ main {
     }
 }
 
-/* Sobre - Grid layout cruzado */
+/* Grid layout cruzado */
 .sobre-container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -229,6 +229,15 @@ main {
     text-transform: uppercase;
     letter-spacing: .15em;
 }
+
+.sobre-texto2 h3 {
+    font-size: 1em;
+    margin-bottom: 15px; 
+    font-family: var(--font01);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+
+}
 .sobre-texto2 {
     text-align: right;
     max-width: 700px;
@@ -256,7 +265,7 @@ main {
 }
 @media (max-width: 768px) {
     .sobre-container-grid {
-        grid-template-columns: 1fr; /* Vira 1 coluna no mobile */
+        grid-template-columns: 1fr; 
         text-align: left;
     }
     
@@ -318,8 +327,8 @@ main {
 .footer {
     bottom: 0%;
     width: 100%;
-    background-color: var(--cor01); /* Cor de fundo */
-    color: var(--cor005); /* Cor do texto */
+    background-color: var(--cor01); 
+    color: var(--cor005); 
     padding: 20px 0;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -327,7 +336,7 @@ main {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Empurra os itens para as extremidades */
+    justify-content: space-between; 
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
@@ -335,12 +344,12 @@ main {
 }
 
 .footer-left {
-    width: 50%; /* Define um tamanho para a seção "Sobre o Portfólio" */
+    width: 50%; 
 }
 
 .footer-right {
-    width: 30%; /* Define um tamanho para a seção "Links" */
-    text-align: left; /* Alinha o conteúdo à direita */
+    width: 30%; 
+    text-align: left; 
 }
 
 .footer-right ul {
@@ -354,12 +363,12 @@ main {
 
 .footer-right ul li a {
     text-decoration: none;
-    color: var(--cor005); /* Cor dos links */
+    color: var(--cor005); 
     transition: 0.3s;
 }
 
 .footer-right ul li a:hover {
-    color: var(--cor006);; /* Cor ao passar o mouse */
+    color: var(--cor006);; 
 }
 
 .footer-bottom {

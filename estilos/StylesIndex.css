@@ -194,7 +194,7 @@ main {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1500px at 90% -15%);
+        clip-path: circle(1500px at center);
         pointer-events: all;
         width: 100vw;
         min-width: 500px;
@@ -287,6 +287,17 @@ main {
     margin-top: 10px;
     letter-spacing: .15em;
     text-transform: uppercase;
+}
+
+.text-third-mobile {
+    color: #4a6180;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    display: none;
 }
 
 /* Sobre - Grid layout cruzado */
@@ -682,6 +693,10 @@ main {
     }
 
     .text-third {
+        display: none;
+    }
+
+    .text-third-mobile {
         display: block;
         text-align: center;
     }
@@ -702,4 +717,12 @@ main {
 } 
 
 }
-/* Contatos */
+
+@media (max-width: 512px) {   
+.modal{
+    width: 80%;
+}    
+
+}
+
+
