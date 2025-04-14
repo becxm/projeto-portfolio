@@ -1,0 +1,124 @@
+/* Parte dos projetos */
+
+.corpoprojeto {
+    background-color: #f7f7f7;
+}
+
+
+.container-integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 1598px) {
+    .container-integrantes {
+        margin-left: 200px;
+    }
+}
+
+/* Mexe em cada coluna de integrante */
+.coluna-integrante {
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Informações do integrante */
+.info-integrante {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Fotos circulares */
+.foto-circular {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease-in-out; /* Transição para a animação */
+}
+
+.foto-circular:hover {
+    opacity: 0.8; /* Estilo ao passar o mouse */
+}
+
+/* Links */
+a {
+    color: #8C4126;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4a6180;
+    text-decoration: underline;
+}
+
+.projetos-ocultos {
+    display: none; /* isso aqui deixa os outros projetos escondidos*/
+    margin-top: 10px; /*um pouco de espaço acima dos projetos ocultos */
+}
+
+.mostrar-mais {
+    background-color: #d4a373; /* Cor de destaque para o botão */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.mostrar-mais:hover {
+    background-color: #a97c50;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1em;
+    color: #555; /* Cor inicial do coração */
+    transition: color 0.3s ease;
+}
+
+.like-btn:hover {
+    color: #e44d26; /* Cor ao passar o mouse */
+}
+
+.like-btn.liked {
+    color: red; /* Cor quando o like é dado */
+}
+
+.like-count {
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.info-integrante > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espaço entre os links dos projetos */
+    justify-content: center; /* Alinha o link e o botão de like */
+}
+
+.texto-meio {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px; 
+    text-align: center;
+}
