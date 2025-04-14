@@ -13,6 +13,12 @@
     padding: 20px;
 }
 
+@media (min-width: 1598px) {
+    .container-integrantes {
+        margin-left: 200px;
+    }
+}
+
 /* Mexe em cada coluna de integrante */
 .coluna-integrante {
     flex: 1 1 300px;
