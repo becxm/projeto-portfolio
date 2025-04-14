@@ -27,22 +27,36 @@ html {
 .header {
     background-color: #f8efdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
-    max-width: 3500px;
-    min-width: 490px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
     padding-left: 10px;
-    display: block;
+    float: left;
+}
+
+@media (max-width: 1598px) {
+    .header {
+        float: left;
+        width: 100vw;
+        height: 195px;
+    }
+
+    .nav-list {
+        display: hidden;
+    }
 }
 
 .nav {
     align-items: center;
     max-width: 3000px;
     min-width: 300px;
-    height: 200px;
+    height: 100%;
     margin-inline: auto;
-    display: block;
+    display: flex;
     justify-content: space-between;
     text-decoration: none;
     font-family: 'Poppins';
+
 }
 
 .nav-list li {
@@ -50,15 +64,14 @@ html {
     text-decoration: none;
 }
 
-.nav-list ul {
-    display: block;
-}
-
 .nav-list {
     display: flex;
-    gap: 32px;
-    margin: auto;
+    gap: 60px;
     max-width: 3000px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
 }
 
 .nav-list a {
@@ -93,7 +106,7 @@ html {
     margin-top: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1598px) {
     .hamburger {
         display: block;
         z-index: 1;
@@ -197,7 +210,7 @@ html {
 }
 
 
-@media (min-width: 901px) {
+@media (min-width: 1598px) {
     img {
         display: flex;
     }
@@ -254,7 +267,7 @@ html {
     }
 }
 
-@media (max-width: 901px) {
+@media (max-width: 1598px) {
     .menubar {
         display: none;
     }
@@ -265,6 +278,7 @@ html {
     background: none;
     border-top: 3px solid #734E40;
     cursor: pointer;
+    display: none;
 }
 
 .menubar::before,
@@ -338,7 +352,6 @@ main {
 .contato {
     max-width: 800px;
     min-width: 500px;
-    margin: auto;
     background-color: white;
     margin: auto;
     box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.404);
@@ -483,8 +496,8 @@ footer {
     bottom: 0%;
     max-width: 100%;
     min-width: 500px;
-    background-color: var(--cor01); /* Cor de fundo */
-    color: var(--cor005); /* Cor do texto */
+    background-color: var(--cor01); 
+    color: var(--cor005);
     padding: 20px 0;
     font-family: Arial, sans-serif;
     text-align: center;
