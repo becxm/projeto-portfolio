@@ -263,6 +263,14 @@ main {
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
+#curriculo {
+    background-color: var(--cor003);
+    border-radius: .5rem;
+    padding: 1rem;
+    color: black;
+}
+
 @media (max-width: 768px) {
     .sobre-container-grid {
         grid-template-columns: 1fr; 
