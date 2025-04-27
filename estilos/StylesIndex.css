@@ -27,6 +27,7 @@ html, body {
 
 body {
     background-color: var(--cor01);
+    width: 100vw;
 }
 
 main {
@@ -37,16 +38,17 @@ main {
 
 /* Header and Navigation */
 .header {
-    background-color: #f8efdcdc;
+    background-color: #f8efdc;
     box-shadow: 1px 1px 8px -3px rgba(0, 0, 0, 0.445);
     max-width: 3500px;
+    min-width: 360px;
     padding-left: 10px;
 }
 
 .nav {
     align-items: center;
     max-width: 3000px;
-    min-width: 300px;
+    min-width: 360px;
     height: 200px;
     margin-inline: auto;
     display: flex;
@@ -65,6 +67,7 @@ main {
     gap: 32px;
     margin: auto;
     max-width: 3000px;
+    min-width: 360px;
 }
 
 .nav-list a {
@@ -114,18 +117,18 @@ main {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
-        min-width: 500px;
+        max-width: 100%;
+        min-width: 360px;
         height: 50vh;
         background: #BF8563;
         clip-path: circle(10px at 100vw -15%);
         transition: 1s ease-out;
-
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+        min-width: 0 !important;
     }
     
     .nav-list a {
@@ -194,10 +197,9 @@ main {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1500px at center);
+        clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
-        width: 100vw;
-        min-width: 500px;
+        min-width: 360px;
         max-width: 3000px;
     }
 }
