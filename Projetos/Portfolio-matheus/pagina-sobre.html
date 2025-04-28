@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página sobre o Capitão do Navio</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/style2.css"> </head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <header>
+        <div class="header-content">
+            <h1>Sobre o Capitão desse Navio Pirata</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="menu-lateral">
+            <div class="menu-content">
+                <p>Menu</p>
+                <a href="pagina-principal.html"><i class="fas fa-home"></i> Início</a>
+                <a href="pagina-sobre.html"><i class="fas fa-user"></i> Sobre</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contato</a>
+                <a href="#"><i class="fas fa-box-open"></i> Tesouro</a>
+                <div class="compass-icon"><i class="fas fa-compass"></i></div>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <section class="pirate-card">
+                <h2><i class="fas fa-users"></i> Nossa Tripulação</h2>
+                <p>Somos navegadores digitais em busca de compartilhar mapas de tesouros escondidos pelos sete mares da internet!</p>
+            </section>
+
+            <section class="pirate-card">
+                <h2><i class="fas fa-scroll"></i> Nossa História</h2>
+                <p>Este navio foi construído com linhas de HTML e CSS. Partimos em nossa primeira expedição em busca de conhecimento e aventura digital!</p>
+            </section>
+
+            <section class="pirate-card">
+                <h2><i class="fas fa-crosshairs"></i> Missão</h2>
+                <p>Guiar marujos iniciantes com conteúdo temático, divertido e cheio de códigos para navegar sem medo pelo oceano da web.</p>
+            </section>
+
+            <section class="pirate-card treasure-map">
+                <h2><i class="fas fa-map"></i> O Mapa do Tesouro</h2>
+                <ul>
+                    <li>Tutoriais e Dicas</li>
+                    <li>Ferramentas Úteis</li>
+                    <li>Navegação Temática</li>
+                </ul>
+            </section>
+
+            <section class="pirate-card captain-section">
+                <h2><i class="fas fa-hat-cowboy"></i> Sobre o Capitão</h2>
+                <p>Nosso capitão é um aventureiro do código, apaixonado por design criativo e temas piratas. Comanda este navio com coragem e curiosidade.</p>
+            </section>
+        </div>
+    </div>
+
+    <footer class="pirate-footer">
+        <p>© 2023 Navio Pirata Digital - Todos os direitos saqueados</p>
+    </footer>
+
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector('header');
+        const footer = document.querySelector('footer');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                header.classList.remove('cabecalho-escondido');
+                footer.classList.remove('rodape-escondido');
+            } else {
+                header.classList.add('cabecalho-escondido');
+                footer.classList.add('rodape-escondido');
+            }
+
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
+</body>
+</html>

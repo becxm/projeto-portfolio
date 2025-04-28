@@ -1,0 +1,283 @@
+/* Geral */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #8B0000;
+    --accent-color: #F4D35E;
+    --background-color: #F4F1DE;
+    --text-color: #3A2D1E;
+    --parchment: #F5E7C1;
+}
+
+body {
+    font-family: 'Pirata One', 'UnifrakturCook', cursive;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    position: relative;
+    background-image: url('https://www.transparenttextures.com/patterns/old-map.png');
+    background-attachment: fixed;
+    display: flex;
+    font-size: 1.1rem; /* Aumentando a fonte base do body */
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 241, 222, 0.7);
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 12px 0; /* Aumentando um pouco o padding vertical */
+    font-size: 1.7rem; /* Aumentando o tamanho da fonte do cabeçalho */
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--accent-color);
+    z-index: 5;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cabecalho-escondido {
+    transform: translateY(-100%);
+}
+
+.header-content {
+    position: relative;
+}
+
+/* MENU LATERAL */
+.menu-lateral {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    width: 220px; /* Aumentando um pouco a largura */
+    height: 100vh;
+    padding: 18px; /* Aumentando um pouco o padding */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-content {
+    margin-top: 22px; /* Ajustando a margem */
+}
+
+.menu-content p {
+    font-weight: bold;
+    margin-bottom: 8px; /* Aumentando a margem */
+    font-size: 1.2rem; /* Aumentando a fonte do título do menu */
+}
+
+.menu-lateral a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Aumentando o padding vertical */
+    font-size: 1.1rem; /* Aumentando a fonte dos links */
+    font-weight: bold;
+}
+
+.menu-lateral a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.compass-icon {
+    font-size: 1.7rem; /* Aumentando a fonte do ícone */
+    color: var(--accent-color);
+    opacity: 0.7;
+    margin-top: 20px; /* Aumentando a margem */
+}
+
+/* CONTEÚDO PRINCIPAL */
+.container {
+    display: block;
+    margin-top: 55px; /* Ajustando a margem superior */
+    margin-left: 220px; /* Ajustando a margem esquerda */
+    padding: 18px; /* Aumentando o padding */
+    box-sizing: border-box;
+    min-height: calc(100vh - 55px - 45px); /* Ajustando a altura mínima */
+}
+
+.conteudo {
+    flex-grow: 1;
+    margin-left: 0;
+    padding: 18px; /* Aumentando o padding */
+    font-size: 1.1rem; /* Aumentando a fonte do conteúdo */
+    line-height: 1.5; /* Melhorando a legibilidade com a fonte maior */
+}
+
+section {
+    margin-bottom: 25px; /* Ajustando a margem inferior */
+    background-color: var(--parchment);
+    padding: 18px; /* Aumentando o padding */
+    border-radius: 5px;
+    border: 1px solid #D2B48C;
+}
+
+h2 {
+    font-size: 1.4rem; /* Aumentando a fonte dos títulos */
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--secondary-color);
+    padding-bottom: 6px;
+}
+
+ul {
+    padding-left: 25px; /* Aumentando o padding da lista */
+}
+
+ul li {
+    font-size: 1.1rem; /* Aumentando a fonte dos itens da lista */
+    padding: 5px 0;
+}
+
+/* Footer */
+.pirate-footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 10px; /* Aumentando o padding */
+    position: fixed;
+    bottom: 0;
+    left: 220px; /* Ajustando a margem esquerda */
+    width: calc(100% - 220px);
+    box-sizing: border-box;
+    border-top: 2px solid var(--accent-color);
+    z-index: 5;
+    font-size: 1rem; /* Aumentando a fonte do rodapé */
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rodape-escondido {
+    transform: translateY(100%);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .menu-lateral {
+        width: 180px;
+        padding: 12px;
+    }
+
+    header,
+    .container,
+    .pirate-footer {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+        font-size: 1rem; /* Ajustando a fonte base para telas menores */
+    }
+
+    .menu-lateral {
+        width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-right: none;
+        border-top: 2px solid var(--secondary-color);
+        height: auto;
+        z-index: auto;
+        padding: 8px 0;
+    }
+
+    .menu-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        margin-top: 0;
+    }
+
+    .menu-content p {
+        display: none;
+    }
+
+    .menu-lateral a {
+        margin: 4px;
+        padding: 6px 10px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid transparent;
+    }
+
+    .menu-lateral a i {
+        margin-right: 6px;
+    }
+
+    .menu-lateral a:hover {
+        border-bottom: 1px solid var(--accent-color);
+        transform: translateY(1px);
+    }
+
+    .compass-icon {
+        display: none;
+    }
+
+    header,
+    .container,
+    .pirate-footer {
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+        top: auto;
+        bottom: auto;
+    }
+
+    header {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    .container {
+        margin-top: auto;
+        padding-top: 45px;
+        min-height: auto;
+    }
+
+    .conteudo {
+        padding: 12px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    section {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+    }
+
+    ul li {
+        font-size: 1rem;
+        padding: 4px 0;
+    }
+
+    .pirate-footer {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

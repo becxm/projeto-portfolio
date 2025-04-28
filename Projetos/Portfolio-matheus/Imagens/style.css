@@ -1,0 +1,50 @@
+
+        .imagem-esquerda {
+            float: left;
+            margin-right: 15px;
+        }
+        .paragrafo-2 {
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            color: #ff6347;
+            text-align: right;
+            font-weight: bold;
+        }
+        .paragrafo-3 {
+            font-family: 'Verdana', sans-serif;
+            font-size: 16px;
+            color: #4682b4;
+            line-height: 1.5;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .paragrafo-4 {
+            font-family: 'Georgia', serif;
+            font-size: 22px;
+            color: #2e8b57;
+            line-height: 1.6;
+            text-align: left;
+            font-weight: normal;
+        }
+        p {
+            margin: 15px 0;
+        }
+
+        .imagem-direita {
+            float: right;
+            margin-left: 15px;
+        }
+
+        .centralizado {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .paragrafo-1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.8;
+            text-align: justify;
+            font-style: italic;
+        }
